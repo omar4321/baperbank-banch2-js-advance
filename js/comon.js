@@ -24,9 +24,6 @@ function getCurrentBalance() {
 
 function updateBalance(amount, isAdd) {
   const balanceTotal = document.getElementById('balance-total');
-  /*
-     const balanceTotalText = balanceTotal.innerText;
-    const previousBalanceTotal = parseFloat(balanceTotalText); */
   const previousBalanceTotal = getCurrentBalance();
   if (isAdd == true) {
     balanceTotal.innerText = previousBalanceTotal + amount;

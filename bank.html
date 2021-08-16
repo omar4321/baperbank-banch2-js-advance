@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking pages</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-4xl text-center mt-14">
+        Let's Get Some
+        <spa class="font-semibold text-red-700">Baper-Mooooney</spa> !!!!
+      </h1>
+    </header>
+    <main class="w-9/12 mx-auto">
+      <!-- Balance and Transaction -->
+      <section class="mt-9">
+        <div class="grid grid-cols-3 gap-4 items-center justify-center">
+          <div class="bg-yellow-400 p-8 rounded">
+            <h3 class="text-3xl text-white">Deposit</h3>
+            <h2 class="text-4xl text-white">
+              $<span id="deposit-total">00</span>
+            </h2>
+          </div>
+          <div class="bg-blue-700 p-8 rounded text-white">
+            <h3 class="text-3xl">Withdrow</h3>
+            <h2 class="text-4xl">$<span id="withdraw-total">00</span></h2>
+          </div>
+          <div class="bg-green-400 p-8 rounded text-white">
+            <h3 class="text-3xl">Balance</h3>
+            <h2 class="text-4xl">$<span id="balance-total">1100</span></h2>
+          </div>
+        </div>
+      </section>
+      <!-- Deposit and Withdraw -->
+      <section class="mt-9">
+        <div class="grid grid-cols-2 gap-5">
+          <div class="bg-indigo-800 py-4 px-4 rounded">
+            <h3 class="text-3xl text-white">Please Deposit Your Amount</h3>
+            <div>
+              <input
+                id="deposit-input"
+                class="
+                  boder
+                  block
+                  boder-gray-400
+                  rounded
+                  w-3/4
+                  mb-4
+                  px-2
+                  mx-auto
+                  h-10
+                  mt-4
+                "
+                type="text"
+                placeholder=" $ Enter Your Amount"
+              />
+
+              <button
+                id="deposit-button"
+                class="
+                  bg-yellow-600
+                  px-4
+                  rounded
+                  font-medium
+                  h-12
+                  w-24
+                  mb-4
+                  mt-4
+                  text-white
+                "
+              >
+                Deposit
+              </button>
+            </div>
+          </div>
+          <div class="bg-pink-700 py-4 px-4 rounded">
+            <h3 class="text-3xl text-white">Please Withdraw Your Amount</h3>
+            <div>
+              <input
+                id="withdraw-input"
+                class="
+                  boder
+                  block
+                  boder-gray-400
+                  rounded
+                  w-3/4
+                  mb-4
+                  px-2
+                  mx-auto
+                  h-10
+                  mt-4
+                "
+                type="text"
+                placeholder=" $ Enter Your Amount"
+              />
+
+              <button
+                id="withdraw-button"
+                class="
+                  bg-yellow-600
+                  px-4
+                  rounded
+                  font-medium
+                  h-12
+                  w-24
+                  mb-4
+                  mt-4
+                  text-white
+                "
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- js -->
+    <script src="./js/comon.js"></script>
+  </body>
+</html>
